@@ -1,3 +1,4 @@
+#include "missionSettings.hpp"
 // INIT PLAYER LOCAL //////////////////////////////////////////////////////////////////////////////
 /*
 	- Executed locally when player joins mission (includes both mission start and JIP).
