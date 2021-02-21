@@ -1,0 +1,14 @@
+And Kids, I cannot stress this enough;
+
+SPEND SOME FUCKING TIME OPTIMIZEING YOUR MISSIONS
+
+Take the time to set dress pieces and flavour as simple objects.  purely visual things that will never be touched ?
+disable simulation !
+SPACE OUT OBJECTIVES
+Cacheing is set by default to 1.5 km.  we can use transport vehicles and Helo's, well we can RTB after each Objective.
+dont have everythign packed so tightly together everythign is constantly awake.
+DYNAMIC SIMULATION
+sd unit cacheing is set to 1500 your dynamic sim range should be shorter then that.
+IF we all manage to actually take some time and care and optimize things well we may do away with Dynamic sim IN THE FUTURE !
+
+As it stands, ASR_AI is the AI mod running on the server.  That can and will change pending updates, improvements etc etc. 
