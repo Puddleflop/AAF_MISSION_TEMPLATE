@@ -1,0 +1,8 @@
+enableDebugConsole = 1;
+respawn = "BASE"; //Sets respawn type. https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnButton = 1; //allows player manual respawn
+respawnDelay = 10; // delay for respawn time
+respawnOnStart = -1; //setting this to -1 stops onplayerrespawn.sqf from firing on start.
+disabledAI = 1; //Turns off AI filling player slots.
+wreckManagerMode = 0;
+corpseManagerMode = 0;
