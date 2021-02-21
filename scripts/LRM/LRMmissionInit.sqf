@@ -19,5 +19,5 @@ if (LRMplayerSAVE) then {
     [{
         _this = database;
         [_this] call aaf_fnc_startSave;
-    }, [database], 10] call CBA_fnc_waitandexecute;
+    }, [database], 300] call CBA_fnc_waitandexecute;
 };
