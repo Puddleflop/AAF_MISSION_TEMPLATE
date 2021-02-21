@@ -19,7 +19,7 @@ aaf_fnc_rTracker = compile preprocessFile "scripts\fn_rTracker.sqf";
 aaf_fnc_rCache = compile preprocessFile "scripts\fn_rCache.sqf";
 aaf_fnc_rUncache = compile preprocessFile "scripts\fn_rUncache.sqf";
 f_var_reducerAggressiveness = 1;
-[120] spawn aaf_fnc_rInit;
+[120] spawn aaf_fnc_rInit;//120 seconds of mission time to init reducer
 //SIMULATION HIT EVENTHANDLER//////////////////////////////////////////////////////////////////////
 /* Needed ?
 {

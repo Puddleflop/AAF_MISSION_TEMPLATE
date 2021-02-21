@@ -42,7 +42,7 @@ f_rInit = true;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Define parameters
 _range = (dynamicSimulationDistance "Group");// The range outside of which to cache units - dynasim value
-f_var_reducerSleep = 6; 		// The time to sleep between checking
+f_var_reducerSleep = 6; // The time to sleep between checking
 f_var_reducerRun = true;
 
 [_range] spawn aaf_fnc_rTracker;
