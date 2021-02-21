@@ -27,4 +27,4 @@ else {};
 [] execVM "briefing\briefing.sqf"; // Standard Briefing - Everyone can see this
 */
 database = [] call aaf_fnc_dbInit;
-_ad = [database] execVM "\scripts\LRM\MissionInit.sqf";
+_ad = [database] execVM "\scripts\LRM\LRMmissionInit.sqf";
