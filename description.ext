@@ -1,3 +1,4 @@
+#include "missionSettings.hpp"
 // DESCRIPTION ////////////////////////////////////////////////////////////////////////////////////
 /*
 	- Description.ext handles all framework and Mission specific settings.
@@ -8,10 +9,9 @@ class Header {
 	minPlayers = 1;
 	maxPlayers = 60;
 };
-//MISSION PRESENTATION (set your mission name here, it is also a good idea to add version numbers so you can differentiate between mission versions!)
-author = "AAF Monty";
-#define MISSIONNAME "AAF Template"
-#define MISSIONDESCRIPTION "AAF Operation"
+//MISSION PRESENTATION 
+author = AUTHOR;
+
 // SOUNDS UNCOMMENT AND COMPLETE IF ADDING CUSTOM SOUNDS //////////////////////////////////////////
 
 /*
@@ -151,6 +151,23 @@ class zen_context_menu_actions {
 			displayName = "Simulation OFF";
 			statement = "_hoveredEntity enableSimulationGlobal false;";
 			//condition = // group/object select, Simulatyion on only
+		};
+	};
+	class HIDEZEUS {
+	displayName = "Hide Zeus";
+	statement = "[LOGIC] call zen_modules_fnc_moduleHideZeus";
+	};
+};
+
+class CfgFunctions {
+	class AAF {
+		class Tag {
+			tag = "AAF";
+		};
+		class LRM {
+			class dbInit {file = "scripts\LRM\fn_dbInit.sqf";};
+			class startLoad {file = "scripts\LRM\fn_startLoad.sqf";};
+			class startSave {file = "scripts\LRM\fn_startSave.sqf";};
 		};
 	};
 };
