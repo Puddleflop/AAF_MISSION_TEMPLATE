@@ -16,15 +16,23 @@ params [
 ];
 {
 	switch (_aggressiveness) do {
-		case 1: {// 1 - disable only non-leaders and non-drivers
+		case 1: {// 1 - disable only non-leaders and non-drivers OLD VERSION
 			if ((count (assignedVehicleRole _x) == 0 || {"Driver" != (assignedVehicleRole _x) select 0}) && (_x != leader _group)) then {
 				_x enableSimulationGlobal false;
 				_x hideObjectGlobal true;
 			};
 		};
-		case 2: {// 2 - disable all non-moving units, always exclude vehicle drivers
+		/*case 2: {// 2 - disable all non-moving units, always exclude vehicle drivers
 			if (count (assignedVehicleRole _x) == 0 || {"Driver" != (assignedVehicleRole _x) select 0}) then {
 				if ((_x != leader _group) || (_x == leader _group && speed _x == 0)) then {
+					_x enableSimulationGlobal false;
+					_x hideObjectGlobal true;
+				};
+			};
+		};*/
+		case 2: {// 2 - disable all non-moving units, always exclude vehicle drivers
+			if (count (assignedVehicleRole _x) == 0 || {"Driver" != (assignedVehicleRole _x) select 0}) then {
+				if (_x != leader _group) then {
 					_x enableSimulationGlobal false;
 					_x hideObjectGlobal true;
 				};
