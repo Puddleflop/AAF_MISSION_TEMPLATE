@@ -1,3 +1,4 @@
+#include "missionSettings.hpp"
 // INIT PLAYER LOCAL //////////////////////////////////////////////////////////////////////////////
 /*
 	- Executed locally when player joins mission (includes both mission start and JIP).
@@ -25,3 +26,6 @@ if (((vehicleVarName player) == "T1")||((vehicleVarName player) == "T2")||((vehi
 else {};
 [] execVM "briefing\briefing.sqf"; // Standard Briefing - Everyone can see this
 */
+//LRM INIT/////////////////////////////////////////////////////////////////////////////////////////
+database = call aaf_fnc_dbInit;
+database execVM "scripts\LRM\LRMmissionInit.sqf";
