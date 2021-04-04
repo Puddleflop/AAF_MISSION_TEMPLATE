@@ -7,6 +7,9 @@
 #define LRMNAME MISSIONNAME
 // Enables the LRM player save
 #define LRMPLAYERSAVE true
+#define LRMPLAYERPOSITIONSAVE true
+#define LRMPLAYERGEARSAVE true
+#define LRMPLAYERMEDICALSAVE true
 // Enables the LRM AI save
 #define LRMAISAVE true
 // Enables the LRM object save
