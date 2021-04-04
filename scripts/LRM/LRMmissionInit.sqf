@@ -9,7 +9,7 @@ stats the auto save feature of LRM
 waitUntil {
     time > 5
 };
-if (LRMplayerSAVE) then {
+if (LRMPLAYERSAVE) then {
     [{
         _this = database;
         if !(count ("getSections" call database) == 0) then {
