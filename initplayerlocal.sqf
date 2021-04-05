@@ -18,14 +18,12 @@ aaf_fnc_gear = compile preprocessFile "scripts\fn_gear.sqf"; //Gear saving funct
 //BRIEFING ////////////////////////////////////////////////////////////////////////////////////////
 // Hidden Briefing extras - Selected individuals can see thisList
 // Put T1, T2, T3, T4, T5 into the 2 Zeus slots, Company Commander, and 2 Platoon Commanders
-/*
 if (((vehicleVarName player) == "T1")||((vehicleVarName player) == "T2")||((vehicleVarName player) == "T3")||((vehicleVarName player) == "T4")||((vehicleVarName player) == "T5")) then {
   [] execVM "briefing\briefing_secret.sqf";
   hint "success";
 }
 else {};
 [] execVM "briefing\briefing.sqf"; // Standard Briefing - Everyone can see this
-*/
 //LRM INIT/////////////////////////////////////////////////////////////////////////////////////////
 database = call aaf_fnc_dbInit;
 database execVM "scripts\LRM\LRMmissionInit.sqf";
