@@ -209,8 +209,8 @@ class CfgFunctions {
 		};
 		class LRM {
 			class dbInit {file = "scripts\LRM\fn_dbInit.sqf";};
-			class startLoad {file = "scripts\LRM\fn_startLoad.sqf";};
-			class startSave {file = "scripts\LRM\fn_startSave.sqf";};
+			class startLoad {file = "scripts\LRM\player\fn_startLoad.sqf";};
+			class startSave {file = "scripts\LRM\player\fn_startSave.sqf";};
 		};
 	};
 };
