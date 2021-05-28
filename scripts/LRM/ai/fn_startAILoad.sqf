@@ -12,5 +12,5 @@ Returns:
 nothing
 
 Example:
-[] call AAF_fnc_startSave;
+[] call AAF_fnc_startAILoad;
 -------------------------------------------------------------------------------------------------*/

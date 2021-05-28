@@ -26,4 +26,4 @@ else {};
 [] execVM "briefing\briefing.sqf"; // Standard Briefing - Everyone can see this
 //LRM INIT/////////////////////////////////////////////////////////////////////////////////////////
 database = call aaf_fnc_dbInit;
-database execVM "scripts\LRM\LRMmissionInit.sqf";
+[{[_args select 0] call aaf_fnc_LRMInit}, [database], 5] call CBA_fnc_waitAndExecute;

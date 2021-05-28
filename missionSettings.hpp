@@ -1,5 +1,5 @@
 // Change the second part of the value to what you need
-//MISSION PRESENTATION (set your mission name here, it is also a good idea to add version numbers so you can differentiate between mission versions!)
+// MISSION PRESENTATION (set your mission name here, it is also a good idea to add version numbers so you can differentiate between mission versions!)
 #define MISSIONNAME "AAF Template"
 #define MISSIONDESCRIPTION "AAF Operation"
 #define AUTHOR "AAF"
@@ -14,5 +14,9 @@
 #define LRMAISAVE true
 // Enables the LRM object save
 #define LRMOBJSAVE true
-// Enable Debug Mode
+// Enables the LRM vehicle save
+#define LRMVEHICLESAVE true
+// Enables the LRM world state save
+#define LRMWORLDSTATESAVE true
+// Enable Debug Mode (Don't touch)
 #define AAF_DEBUGMODE false

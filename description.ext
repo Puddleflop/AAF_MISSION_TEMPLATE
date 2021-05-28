@@ -153,49 +153,56 @@ class zen_context_menu_actions {
 			//condition = // group/object select, Simulatyion on only
 		};
 	};
+
 	class HIDEZEUS {
-	displayName = "Hide Zeus";
-	statement = "[LOGIC] call zen_modules_fnc_moduleHideZeus";
+		displayName = "Hide Zeus";
+		statement = "[LOGIC] call zen_modules_fnc_moduleHideZeus;";
 	};
+
+	class FPSMON {
+		displayName = "FPS Mon";
+		statement = "[] execVM ""scripts/fpsmon.sqf"";";
+	}
+
 	class VCOMAI {
 		displayName = "VCOM AI";
-		class vcmflankon { 
+		class vcmflankon {
 			displayName = "Flank ON";
 			statement = "(group _hoveredEntity) setVariable [""VCM_NOFLANK"",false];"; //This command will stop the AI squad from executing advanced movement maneuvers.
 		};
-		class vcmflankoff { 
+		class vcmflankoff {
 			displayName = "Flank OFF";
 			statement = "(group _hoveredEntity) setVariable [""VCM_NOFLANK"",true];"; //This command will stop the AI squad from executing advanced movement maneuvers.
 		};
-		class vcmsuppon { 
+		class vcmsuppon {
 			displayName = "Reinforce ON";
 			statement = "(group _hoveredEntity) setVariable [""VCM_NORESCUE"",false];"; //This command will stop the AI squad from responding to calls for backup.
 		};
-		class vcmsuppoff { 
+		class vcmsuppoff {
 			displayName = "Reinforce OFF";
 			statement = "(group _hoveredEntity) setVariable [""VCM_NORESCUE"",true];"; //This command will stop the AI squad from responding to calls for backup.
 		};
-		class vcmreinfon { 
+		class vcmreinfon {
 			displayName = "Call Backup ON";
 			statement = "(group _hoveredEntity) setVariable [""VCM_TOUGHSQUAD"",false];"; //This command will stop the AI squad from calling for backup.
 		};
-		class vcmreinfoff { 
+		class vcmreinfoff {
 			displayName = "Call Backup OFF";
 			statement = "(group _hoveredEntity) setVariable [""VCM_TOUGHSQUAD"",true];"; //This command will stop the AI squad from calling for backup.
 		};
-		class vcmon { 
+		class vcmon {
 			displayName = "VCOM ON";
 			statement = "(group _hoveredEntity) setVariable [""Vcm_Disable"",false];"; //This command will disable Vcom AI on a group entirely.
 		};
-		class vcmoff { 
+		class vcmoff {
 			displayName = "VCOM OFF";
 			statement = "(group _hoveredEntity) setVariable [""Vcm_Disable"",true];"; //This command will disable Vcom AI on a group entirely.
 		};
-		class vcmformon { 
+		class vcmformon {
 			displayName = "Change Formations ON";
 			statement = "(group _hoveredEntity) setVariable [""VCM_DisableForm"",false];"; //This command will disable AI group from changing formations.
 		};
-		class vcmformoff { 
+		class vcmformoff {
 			displayName = "Change Formations OFF";
 			statement = "(group _hoveredEntity) setVariable [""VCM_DisableForm"",true];"; //This command will disable AI group from changing formations.
 		};
@@ -207,10 +214,12 @@ class CfgFunctions {
 		class Tag {
 			tag = "AAF";
 		};
+
 		class LRM {
+			class LRMInit {file = "scripts\LRM\fn_LRMInit.sqf";};
 			class dbInit {file = "scripts\LRM\fn_dbInit.sqf";};
-			class startLoad {file = "scripts\LRM\player\fn_startLoad.sqf";};
-			class startSave {file = "scripts\LRM\player\fn_startSave.sqf";};
+			class startLoad {file = "scripts\LRM\player\fn_startPlayerLoad.sqf";};
+			class startSave {file = "scripts\LRM\player\fn_startPlayerSave.sqf";};
 		};
 	};
 };

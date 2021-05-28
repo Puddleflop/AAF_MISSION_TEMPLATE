@@ -15,7 +15,10 @@ Example:
 [] call AAF__lrm_fnc_DBinit;
 -------------------------------------------------------------------------------------------------*/
 params[];
-private _playerUID = getplayerUID player;
+private _playerUID = "";
+if !(hasInterface) then {
+	_playerUID = getplayerUID player;
+};
 private _databaseName = LRMNAME + _playerUID;
 private _lrmGearDB = ["new", _databaseName] call OO_inIDBI;
 _lrmGearDB
